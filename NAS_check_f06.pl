@@ -7,8 +7,8 @@
    
    1.Sauvegarder le script dans le repertoire de son choix 
    
-   2.Créer un raccourci, et le placer dans le dossier SendTo 
-   (C:\Users\IPN_PERSO\AppData\Roaming\Microsoft\Windows\SendTo ... avec le bon IPN !)
+   2.CrÃ©er un raccourci, et le placer dans le dossier SendTo 
+   (C:\Users\username\AppData\Roaming\Microsoft\Windows\SendTo ... avec le bon username !)
    
    3.Clic droit sur le raccourci / Proprietes / Editer le champ Cible
    en rajoutant C:\Perl\bin\perl.exe en DEBUT de ligne 
@@ -22,7 +22,7 @@
 =head1 Dernieres mises a jour
 
  17/03/2015	Modifs mineures
- 18/04/2014	Mises à jour diverses (restriction du choix a la selection d'un f06)
+ 18/04/2014	Mises Ã  jour diverses (restriction du choix a la selection d'un f06)
  31/03/2014	Modification gestion modes de corps rigide
  14/11/2013	Creation
 
@@ -262,7 +262,7 @@ sub get_frequencies_Nastran {
 	while (<FIC>) {
 		if (/\s+NO\.\s+ORDER\s+MASS\s+STIFFNESS$/) {$traite = 1;next;}	# Detection ligne debut traitement
 		if (($traite)&&(/\s+\d+\s+\d+/)) {
-			$id=substr($_,0,10)-1;	# numero du mode - on met le premier indice à 0 ...
+			$id=substr($_,0,10)-1;	# numero du mode - on met le premier indice Ã  0 ...
 			my $freq = substr($_,60,20)+0.;	# frequence
 			#~ print $freq,"\n";
 			if ($freq < $seuil_freq_mode_solide) {$nb_sous_seuil++;}
