@@ -9,8 +9,8 @@
    
    1.Sauvegarder le script ainsi que les packages NAS_functions.pm et STD_functions.pm dans le repertoire de son choix
    2.Modifier la ligne use lib ci-dessous afin de pointer sur le repertoire choisi en 1
-   3.Créer un raccourci vers le script, et le placer dans le dossier SendTo 
-   (C:\Users\IPN_PERSO\AppData\Roaming\Microsoft\Windows\SendTo)
+   3.CrÃ©er un raccourci vers le script, et le placer dans le dossier SendTo 
+   (C:\Users\username\AppData\Roaming\Microsoft\Windows\SendTo)
    4.Clic droit sur le raccourci / Proprietes / Editer le champ Cible
    pour rajouter C:\Perl\bin\perl.exe en DEBUT de ligne (avec un espace entre le .exe et la suite !)
    5. On peut alors traiter n'importe quel fichier bdf par un clic droit / Envoyer Vers
@@ -33,7 +33,7 @@
 
 #~ This use lib commande should be modified to point to the directory in which STD_functions.pm and NAS_functions.pm are located
 
-use lib 'I:\_My_Site\_sharediao\DIESC\caldiv_diesc_las_ef\a071431\Perl';
+use lib 'path\Perl';
 
 use File::Basename;
 use File::Spec::Functions;
